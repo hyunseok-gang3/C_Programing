@@ -1,0 +1,100 @@
+1. 다음 코드의 실행 결과로 옳은 것은?
+
+#include <stdio.h>
+
+int main() {
+    char str[] = "APPLE";
+    str[1] = 'O';
+
+    printf("%s", str);
+
+    return 0;
+}
+
+① APPLE
+② OPPEL
+③ AOPLE
+④ AO PLE
+⑤ 컴파일 오류
+
+
+2. 다음 코드에 대한 설명으로 옳은 것은?
+
+char str1[] = "HELLO";
+char *str2 = "HELLO";
+
+① str1과 str2는 모두 문자열을 수정할 수 없다.
+② str1은 배열이고 str2는 포인터 변수이다.
+③ str1은 포인터이고 str2는 배열이다.
+④ str1과 str2는 항상 같은 메모리 주소를 가진다.
+⑤ 두 변수 모두 정수형 변수이다.
+
+
+3. 다음 코드의 실행 결과는?
+
+#include <stdio.h>
+
+int main() {
+    char ch = 'A';
+
+    printf("%d", ch + 2);
+
+    return 0;
+}
+
+① 65
+② 66
+③ 67
+④ 68
+⑤ A2
+
+
+4. 다음 코드에서 C와 D의 값으로 올바른 것은?
+
+#include <stdio.h>
+
+enum Test {
+    A = 3,
+    B,
+    C = 10,
+    D
+};
+
+int main() {
+    printf("%d %d", C, D);
+    return 0;
+}
+
+① 3 4
+② 10 10
+③ 10 11
+④ 11 12
+⑤ 컴파일 오류
+
+
+5. 다음 코드의 실행 결과는?
+
+#include <stdio.h>
+
+enum Level {
+    LOW = 1,
+    MIDDLE = 3,
+    HIGH
+};
+
+int main() {
+    enum Level x = HIGH;
+
+    if (x > MIDDLE)
+        printf("UP");
+    else
+        printf("DOWN");
+
+    return 0;
+}
+
+① LOW
+② MIDDLE
+③ HIGH
+④ UP
+⑤ DOWN
